@@ -26,6 +26,12 @@ app.config(function($routeProvider){
 			templateUrl: 'register.html',
 			controller: 'authController'
 		});
+
+		//the signup display using signup URL -duplicate of register!!
+		.when('/signup', {
+			templateUrl: 'signup.html',
+			controller: 'authController'
+		});
 });
 
 app.factory('postService', function($resource){
